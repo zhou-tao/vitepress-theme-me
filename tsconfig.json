@@ -10,5 +10,6 @@
     "skipLibCheck": true,
     "types": ["vite/client"]
   },
+  "include": ["types.d.ts", "src/**/*.ts", "src/**/*.vue"],
   "exclude": ["examples"]
 }

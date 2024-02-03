@@ -32,7 +32,7 @@ export function groupByTime(records: Item[]): Result[] {
   }
   let idx = 0
   for (const [year, records] of timeMap) {
-    result.push({ _idx: ++idx, key: year, records: records.map(v => ({ ...v, time: dayjs(v.time).format('MM/DD'), _idx: ++idx })) })
+    result.push({ _idx: ++idx, key: year, records: records.map((v: any) => ({ ...v, time: dayjs(v.time).format('MM/DD'), _idx: ++idx })) })
   }
   return result
 }
