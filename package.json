@@ -1,0 +1,82 @@
+{
+  "name": "vitepress-theme-me",
+  "type": "module",
+  "version": "0.0.0",
+  "packageManager": "pnpm@8.6.10",
+  "description": "vitepress theme for quickly to build your personal website.",
+  "author": "toryz <zhoutao_233@163.com>",
+  "license": "MIT",
+  "publishConfig": {
+    "access": "public",
+    "registry": "https://registry.npmjs.org/"
+  },
+  "homepage": "https://github.com/zhou-tao/vitepress-theme-me#readme",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/zhou-tao/vitepress-theme-me.git"
+  },
+  "bugs": "https://github.com/zhou-tao/vitepress-theme-me/issues",
+  "keywords": [],
+  "sideEffects": false,
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs"
+    },
+    "./config": {
+      "types": "./dist/config.d.ts",
+      "import": "./dist/config.mjs"
+    }
+  },
+  "main": "./dist/index.mjs",
+  "module": "./dist/index.mjs",
+  "files": [
+    "dist"
+  ],
+  "scripts": {
+    "dev": "unbuild --stub && pnpm -C examples dev",
+    "dev:docs": "pnpm -F docs dev",
+    "build": "vite build",
+    "build:docs": "pnpm -F docs build",
+    "lint": "eslint .",
+    "lint:fix": "eslint . --fix",
+    "prepublishOnly": "pnpm build",
+    "release": "bumpp && npm publish",
+    "start": "esno src/index.ts",
+    "test": "vitest",
+    "typecheck": "tsc --noEmit"
+  },
+  "peerDependencies": {
+    "vitepress": "^1.0.0-rc.35",
+    "vue": "^3.4.5"
+  },
+  "dependencies": {
+    "dayjs": "^1.11.9",
+    "nprogress": "^0.2.0"
+  },
+  "devDependencies": {
+    "@iconify-json/ri": "^1.1.12",
+    "@toryz/eslint-config": "^0.1.2",
+    "@types/node": "^20.4.5",
+    "@types/nprogress": "^0.2.0",
+    "@unocss/reset": "^0.58.3",
+    "bumpp": "^9.1.1",
+    "chalk": "^5.3.0",
+    "eslint": "^8.46.0",
+    "esno": "^0.17.0",
+    "lint-staged": "^13.2.3",
+    "simple-git-hooks": "^2.9.0",
+    "typescript": "^5.1.6",
+    "unocss": "^0.58.3",
+    "vite": "^5.0.10",
+    "vitepress": "1.0.0-rc.35",
+    "vitest": "^0.33.0",
+    "vue": "^3.4.5"
+  },
+  "simple-git-hooks": {
+    "pre-commit": "pnpm lint-staged",
+    "commit-msg": "node scripts/verifyCommit.js"
+  },
+  "lint-staged": {
+    "*": "eslint --fix"
+  }
+}
