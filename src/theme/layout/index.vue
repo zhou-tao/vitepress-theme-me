@@ -17,6 +17,6 @@
 
 <style scoped>
 .layout-me {
-  @apply min-h-100vh;
+  min-height: 100vh;
 }
 </style>

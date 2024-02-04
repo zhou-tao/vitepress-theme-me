@@ -1,5 +1,4 @@
-import '@unocss/reset/tailwind-compat.css'
-import 'uno.css'
+import './tailwind-compat.css'
 import './styles/main.css'
 import './styles/article.css'
 
