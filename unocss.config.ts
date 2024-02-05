@@ -34,19 +34,5 @@ export default defineConfig({
     transformerVariantGroup(),
     transformerDirectives()
   ],
-  blocklist: ['me'],
-  safelist: [
-    'i-ri-github-line',
-    'i-ri-discord-line',
-    'i-ri-facebook-line',
-    'i-ri-instagram-line',
-    'i-ri-linkedin-line',
-    'i-ri-mastodon-line',
-    'i-ri-slack-line',
-    'i-ri-twitter-line',
-    'i-ri-youtube-line',
-    'i-ri-zhihu-line',
-    'i-ri-bilibili-line',
-    'i-ri-heart-pulse-line'
-  ]
+  blocklist: ['me']
 })

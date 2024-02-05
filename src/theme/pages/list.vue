@@ -51,6 +51,6 @@
 
 <style scoped>
 .year {
-  @apply text-8em color-transparent absolute left--3rem top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op15;
+  @apply text-8em color-transparent absolute left--1rem md:left--3rem  top--2rem font-bold text-stroke-2 text-stroke-hex-aaa op15;
 }
 </style>

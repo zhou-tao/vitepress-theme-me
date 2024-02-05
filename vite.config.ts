@@ -3,6 +3,7 @@ import { defineConfig } from 'vite'
 import vue from '@vitejs/plugin-vue'
 import unocss from 'unocss/vite'
 import dts from 'vite-plugin-dts'
+import { nodePolyfills } from 'vite-plugin-node-polyfills'
 
 export default defineConfig({
   build: {
@@ -18,6 +19,7 @@ export default defineConfig({
   plugins: [
     vue(),
     unocss(),
-    dts()
+    dts(),
+    nodePolyfills()
   ]
 })

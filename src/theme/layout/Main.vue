@@ -4,6 +4,7 @@
   import NotFound from '../pages/not-found.vue'
   import List from '../pages/list.vue'
   import Card from '../pages/card.vue'
+  import Comment from '../components/Comment.vue'
   import Pager from '../components/Pager.vue'
 
   const PageLayout = { List, Card }
@@ -23,14 +24,15 @@
         <component :is="Layout" :key="route.path" />
       </template>
       <Content v-else class="slide-enter-content" />
-      <Pager v-if="!hidePager" />
+      <Pager v-if="!hidePager" :key="route.path" />
     </article>
-    <slot />
+    <Comment />
+    <slot :key="route.path" />
   </main>
 </template>
 
 <style scoped>
 .main {
-  @apply px-12 py-10 of-x-hidden max-w-main m-auto;
+  @apply px8 md:px16 py6 md:py10 of-x-hidden max-w-main m-auto;
 }
 </style>

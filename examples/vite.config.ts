@@ -1,10 +1,8 @@
 import { SearchPlugin } from 'vitepress-plugin-search'
 import { defineConfig } from 'vite'
-import Unocss from 'unocss/vite'
 
 export default defineConfig({
   plugins: [
-    Unocss(),
     SearchPlugin({
       placeholder: 'Search Posts',
       buttonLabel: 'Search',

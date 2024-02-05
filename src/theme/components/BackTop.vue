@@ -6,7 +6,8 @@
   onMounted(() => {
     window.onscroll = () => {
       const scrollEl = document.documentElement
-      const curScrollPer = scrollEl.scrollTop / (scrollEl.getBoundingClientRect().height - scrollEl.clientHeight) * 100
+      const scrollTop = window.pageYOffset || scrollEl.scrollTop || document.body.scrollTop
+      const curScrollPer = scrollTop / (scrollEl.getBoundingClientRect().height - scrollEl.clientHeight) * 100
       percent.value = Number(curScrollPer.toFixed(0))
     }
   })
