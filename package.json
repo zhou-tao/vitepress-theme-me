@@ -33,7 +33,7 @@
     "dist"
   ],
   "scripts": {
-    "dev": "unbuild --stub && pnpm -C examples dev",
+    "dev": "pnpm -C examples dev",
     "dev:docs": "pnpm -F docs dev",
     "build": "vite build",
     "build:docs": "pnpm -F docs build",
@@ -74,7 +74,7 @@
     "vite-plugin-dts": "^3.7.2",
     "vite-plugin-node-polyfills": "^0.19.0",
     "vitepress": "1.0.0-rc.35",
-    "vitepress-plugin-search": "1.0.4-alpha.22",
+    "vitepress-plugin-search": "1.0.4-alpha.20",
     "vitest": "^0.33.0",
     "vue": "^3.4.5"
   },

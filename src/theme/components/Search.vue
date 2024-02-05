@@ -1,5 +1,4 @@
 <script setup lang="ts">
-  // @ts-expect-error search
   import Search from 'vitepress-plugin-search/Search.vue'
 </script>
 

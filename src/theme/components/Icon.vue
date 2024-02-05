@@ -1,6 +1,20 @@
 <script setup lang="ts">
   import { computed } from 'vue'
 
+  type RiName = 'discord'
+    | 'facebook'
+    | 'github'
+    | 'instagram'
+    | 'linkedin'
+    | 'mastodon'
+    | 'slack'
+    | 'twitter'
+    | 'youtube'
+    | 'zhihu'
+    | 'bilibili'
+    | 'sun'
+    | 'moon'
+
   interface SvgIcon {
     svg: string
   }
@@ -9,14 +23,19 @@
     src: string
   }
 
+  interface RiIcon {
+    name: RiName
+  }
+
   const props = withDefaults(defineProps<{
-    icon: SvgIcon | LocalIcon
+    icon: SvgIcon | LocalIcon | RiIcon
     size?: string | number
   }>(), {
     size: '1.23rem'
   })
 
   const svgCode = computed(() => (props.icon as SvgIcon).svg)
+  const riName = computed(() => (props.icon as RiIcon).name)
   const iconPath = computed(() => (props.icon as LocalIcon).src)
   const iconSize = computed(() => {
     return typeof props.size === 'number' ? `${props.size}px` : props.size
@@ -25,9 +44,10 @@
 
 <template>
   <div v-if="svgCode" class="svg-icon" :style="{ fontSize: iconSize }" v-html="svgCode" />
-  <span v-else>
-    <img :src="iconPath" :style="{ width: iconSize, height: iconSize }">
-  </span>
+  <div v-else-if="riName" :class="`i-ri-${riName}-line`" :style="{ width: iconSize, height: iconSize }" />
+  <div v-else>
+    <img :src="iconPath" :width="size" :height="size">
+  </div>
 </template>
 
 <style scoped>

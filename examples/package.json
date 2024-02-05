@@ -7,6 +7,9 @@
     "preview": "vitepress preview"
   },
   "devDependencies": {
+    "@iconify-json/carbon": "^1.1.28",
+    "@iconify-json/simple-icons": "^1.1.90",
+    "flexsearch": "0.7.31",
     "vitepress-plugin-search": "1.0.4-alpha.22"
   }
 }

@@ -1,4 +1,4 @@
-import Theme from '../../../src/index.mjs'
+import Theme from '../../../src/index.ts'
 import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 

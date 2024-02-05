@@ -5,5 +5,8 @@ import baseConfig from '../../src/config'
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig,
   title: 'vitepress-theme-me',
-  description: 'vitepress theme for personal website.'
+  description: 'vitepress theme for personal website.',
+  themeConfig: {
+    logo: '/logo.svg'
+  }
 })
