@@ -4,8 +4,14 @@ import baseConfig from '../../dist/config.mjs'
 
 export default defineConfigWithTheme<ThemeConfig>({
   extends: baseConfig as any,
-  title: 'vitepress-theme-me',
+  title: 'vitepress.me',
   description: 'vitepress theme for personal website.',
+  head: [
+    [
+      'link',
+      { rel: 'icon', href: '/logo.svg' }
+    ]
+  ],
   themeConfig: {
     logo: '/logo.svg',
     nav: [
