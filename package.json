@@ -20,10 +20,13 @@
   "sideEffects": false,
   "exports": {
     ".": {
+      "types": "./dist/index.d.ts",
+      "require": "./dist/index.mjs",
       "import": "./dist/index.mjs"
     },
     "./config": {
       "types": "./dist/config.d.ts",
+      "require": "./dist/config.mjs",
       "import": "./dist/config.mjs"
     }
   },

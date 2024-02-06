@@ -5,7 +5,7 @@ import Unocss from 'unocss/vite'
 interface Nav {
   text: string
   link: string
-  icon?: string | { svg: string }
+  icon?: string | { svg: string } | { name: string }
 }
 
 export interface ThemeConfig {
