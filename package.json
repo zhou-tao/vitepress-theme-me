@@ -28,7 +28,8 @@
       "types": "./dist/config.d.ts",
       "require": "./dist/config.mjs",
       "import": "./dist/config.mjs"
-    }
+    },
+    "./style.css": "./dist/style.css"
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",

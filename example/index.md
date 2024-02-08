@@ -2,17 +2,13 @@
 layout: home
 ---
 
-<script setup lang="ts">
-import Icon from '.vitepress/theme/components/Icon.vue'
-</script>
-
 # Demo
 
 Hello, 我是 **Toryz**。此项目仅为`vitepress-theme-me`示例项目。
 
 导航栏可设置以下栏目：
 
-[**「文章」**](/posts) 、 [**「项目」**](/projects)、[**「友链」**](/projects) 等
+[**「文章」**](/posts) 、 [**「项目」**](/projects)、[**「友链」**](/projects) 等。
 
 
 更多内容欢迎访问[**「我的站点」**](https://toryz-me.netlify.app/)。
