@@ -84,7 +84,7 @@ importers:
 
   docs: {}
 
-  examples:
+  example:
     devDependencies:
       '@iconify-json/carbon':
         specifier: ^1.1.28
@@ -98,6 +98,9 @@ importers:
       vitepress-plugin-search:
         specifier: 1.0.4-alpha.22
         version: 1.0.4-alpha.22(flexsearch@0.7.31)(vitepress@1.0.0-rc.35)(vue@3.4.5)
+      vitepress-theme-me:
+        specifier: workspace:*
+        version: link:..
 
 packages:
 

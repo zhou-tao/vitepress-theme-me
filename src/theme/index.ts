@@ -10,12 +10,17 @@ export default {
   Layout,
   async enhanceApp({ app, router, siteData }) {
     if (!import.meta.env.SSR) {
-      const NProgress = await import('nprogress')
-      router.onBeforeRouteChange = (to) => {
-        NProgress.start()
+      try {
+        const NProgress = await import('nprogress')
+        router.onBeforeRouteChange = (to) => {
+          NProgress.start && NProgress.start()
+        }
+        router.onBeforePageLoad = (to) => {
+          NProgress.done && NProgress.done()
+        }
       }
-      router.onBeforePageLoad = (to) => {
-        NProgress.done()
+      catch (error) {
+        console.error('Error: nprogress failed to load!')
       }
     }
   }

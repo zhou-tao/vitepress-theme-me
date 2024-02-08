@@ -1,5 +1,5 @@
 {
-  "name": "@vitepress-theme-me/demo",
+  "name": "@vitepress-theme-me/example",
   "private": true,
   "scripts": {
     "dev": "vitepress dev --port 3333",
@@ -10,6 +10,7 @@
     "@iconify-json/carbon": "^1.1.28",
     "@iconify-json/simple-icons": "^1.1.90",
     "flexsearch": "0.7.31",
-    "vitepress-plugin-search": "1.0.4-alpha.22"
+    "vitepress-plugin-search": "1.0.4-alpha.22",
+    "vitepress-theme-me": "workspace:*"
   }
 }

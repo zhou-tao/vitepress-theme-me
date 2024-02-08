@@ -2,7 +2,7 @@ import { defineConfigWithTheme } from 'vitepress'
 
 import Unocss from 'unocss/vite'
 
-interface Nav {
+export interface Nav {
   text: string
   link: string
   icon?: string | { svg: string } | { name: string }

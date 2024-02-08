@@ -32,11 +32,19 @@
   },
   "main": "./dist/index.mjs",
   "module": "./dist/index.mjs",
+  "types": "./dist/index.d.ts",
+  "typesVersions": {
+    "*": {
+      ".": ["./dist/index.d.ts"],
+      "config": ["dist/config.d.ts"]
+    }
+  },
   "files": [
+    "*.d.ts",
     "dist"
   ],
   "scripts": {
-    "dev": "pnpm -C examples dev",
+    "dev": "pnpm -C example dev",
     "dev:docs": "pnpm -F docs dev",
     "build": "vite build",
     "build:docs": "pnpm -F docs build",

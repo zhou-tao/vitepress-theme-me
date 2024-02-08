@@ -1,4 +1,4 @@
-import Theme from '../../../dist/index.mjs'
+import Theme from 'vitepress-theme-me'
 import '@unocss/reset/tailwind-compat.css'
 import 'uno.css'
 import '../../../dist/style.css'
