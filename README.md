@@ -7,7 +7,7 @@
 
 A lightweight VitePress theme plugin to help you quickly build personal sites.
 
-- :sparkles: Simple and beautiful theme, it's from [antfu.me](https://antfu.me).
+- :sparkles: Simple and beautiful theme, inspired by [antfu.me](https://antfu.me).
 - :rocket: Fastest localized full-text search powered by [flexsearch](https://github.com/nextapps-de/flexsearch).
 - :speech_balloon: Configurable site comment system based on [waline](https://waline.js.org/).
 

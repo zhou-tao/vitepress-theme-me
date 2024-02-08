@@ -16,7 +16,11 @@
     "url": "git+https://github.com/zhou-tao/vitepress-theme-me.git"
   },
   "bugs": "https://github.com/zhou-tao/vitepress-theme-me/issues",
-  "keywords": [],
+  "keywords": [
+    "vitepress",
+    "vitepress theme",
+    "vitepress website"
+  ],
   "sideEffects": false,
   "exports": {
     ".": {
