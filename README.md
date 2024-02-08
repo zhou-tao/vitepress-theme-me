@@ -20,7 +20,7 @@ Documentation is coming soon...
 Please prepare the [VitePress](https://vitepress.dev/zh/guide/getting-started) app first. then install it:
 
 ```bash
-pnpm add vitepress-theme-me -D
+pnpm add vitepress-theme-me flexsearch vitepress-plugin-search -D
 ```
 
 ### Usage
@@ -75,6 +75,34 @@ import Theme from 'vitepress-theme-me'
 import 'vitepress-theme-me/style.css'
 
 export default Theme
+```
+
+3.  add full-context search plugin config. 
+
+notice: you need to add `vite.config.js` to your root directory.
+
+```js
+// vite.config.js
+import { SearchPlugin } from 'vitepress-plugin-search'
+import { defineConfig } from 'vite'
+
+export default defineConfig({
+  plugins: [
+    SearchPlugin({
+      placeholder: 'Search Posts',
+      buttonLabel: 'Search',
+      previewLength: 10,
+      tokenize: 'full'
+    })
+  ],
+  optimizeDeps: { exclude: ['fsevents'] },
+  server: {
+    fs: {
+      // Allow serving files from one level up to the project root
+      allow: ['../..']
+    }
+  }
+})
 ```
 
 Next, it's time to launch the app and build your site!
