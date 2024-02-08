@@ -9,13 +9,15 @@
   const { logo, nav = [] } = site.value?.themeConfig
 
   const themeIcon = ref<'sun' | 'moon'>('sun')
-  let toggleDarkFunc
+  let toggleDarkFunc: any
 
   onBeforeMount(async () => {
     const { isDark, toggleDark } = await import('../composables/useDark')
     toggleDarkFunc = toggleDark
     watch(isDark, (v) => {
       themeIcon.value = v ? 'sun' : 'moon'
+    }, {
+      immediate: true
     })
   })
 </script>

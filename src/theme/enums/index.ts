@@ -4,5 +4,5 @@ export enum Theme {
 }
 
 export enum Storage {
-  THEME = 'dotme-app-theme'
+  THEME = '__vitepress-theme__'
 }

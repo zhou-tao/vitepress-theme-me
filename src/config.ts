@@ -26,6 +26,6 @@ export default defineConfigWithTheme<ThemeConfig>({
     ]
   },
   markdown: {
-    theme: 'vitesse-dark'
+    theme: 'vitesse-light'
   }
 })
