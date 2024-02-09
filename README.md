@@ -11,7 +11,7 @@ A lightweight VitePress theme plugin to help you quickly build personal sites.
 - :rocket: Fastest localized full-text search powered by [flexsearch](https://github.com/nextapps-de/flexsearch).
 - :speech_balloon: Configurable site comment system based on [waline](https://waline.js.org/).
 
-Visit [my site](https://toryz-me.netlify.app/) to get a quick look for **vitepress-theme-me** features.
+Visit [my site](https://toryz-me.netlify.app/) to get a quick look at **vitepress-theme-me** features.
 
 Documentation is coming soon...
 
@@ -20,7 +20,7 @@ Documentation is coming soon...
 Please prepare the [VitePress](https://vitepress.dev/zh/guide/getting-started) app first. then install it:
 
 ```bash
-pnpm add vitepress-theme-me flexsearch vitepress-plugin-search -D
+pnpm add vitepress-theme-me flexsearch vitepress-plugin-search unocss -D
 ```
 
 ### Usage
@@ -39,15 +39,15 @@ export default defineConfigWithTheme({
   head: [
     [
       'link',
-      { rel: 'icon', href: '/logo.svg' }
+      { rel: 'icon', href: '/logo.svg' } // add logo.svg to under the public dir
     ]
   ],
   themeConfig: {
     logo: '/logo.svg',
     nav: [
-      { text: '文章', link: '/posts' },
-      { text: '项目', link: '/projects' },
-      { text: '友链', link: '/friend-links' },
+      { text: '文章', link: '/posts' }, // add posts.md from example and mkdir posts
+      { text: '项目', link: '/projects' }, // add projects.md
+      { text: '友链', link: '/friend-links' }, // add friend-links.md
       {
         text: '为爱发电',
         link: 'https://afdian.net/a/toryz?tab=home',
@@ -67,11 +67,14 @@ export default defineConfigWithTheme({
 })
 ```
 
+For the files that need to be added, see the [example](https://github.com/zhou-tao/vitepress-theme-me/tree/main/example).
+
 2. replaces the vitepress default theme.
 
 ```js
 // .vitepress/theme/index.js
 import Theme from 'vitepress-theme-me'
+import 'uno.css'
 import 'vitepress-theme-me/style.css'
 
 export default Theme

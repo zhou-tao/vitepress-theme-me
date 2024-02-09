@@ -17,6 +17,7 @@ Hello, 我是 **Toryz**。此项目仅为`vitepress-theme-me`示例项目。
 
 在这里可以关注我的动态
 
+<!-- you need to add unocss config to load these icons -->
 <p>
   <a href="https://github.com/zhou-tao"><ClientOnly><div i-ri-github-fill /></ClientOnly> Github</a>&nbsp;&nbsp;
   <a href="https://space.bilibili.com/363188441"><ClientOnly><div i-ri-bilibili-fill /></ClientOnly> 哔哩哔哩</a>&nbsp;&nbsp;
