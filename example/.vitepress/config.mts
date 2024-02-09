@@ -1,9 +1,8 @@
 import { defineConfigWithTheme } from 'vitepress'
-import type { ThemeConfig } from 'vitepress-theme-me/config'
 import baseConfig from 'vitepress-theme-me/config'
 
-export default defineConfigWithTheme<ThemeConfig>({
-  extends: baseConfig as any,
+export default defineConfigWithTheme({
+  extends: baseConfig,
   title: 'vitepress.me',
   description: 'vitepress theme for personal website.',
   head: [

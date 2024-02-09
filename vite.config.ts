@@ -21,7 +21,8 @@ export default defineConfig({
         'vitepress',
         'nprogress',
         'unocss/vite',
-        'vitepress-plugin-search/Search.vue',
+        // 'vitepress-plugin-search/Search.vue',
+        'virtual:search-data',
         '@waline/client'
       ]
     }

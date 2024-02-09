@@ -74,11 +74,16 @@ export default defineConfigWithTheme({
 
 ```js
 // .vitepress/theme/index.js
-import Theme from 'vitepress-theme-me'
+import { Layout, useProgressBar } from 'vitepress-theme-me'
 import 'uno.css'
 import 'vitepress-theme-me/style.css'
 
-export default Theme
+export default {
+  Layout,
+  async enhanceApp({ app, router }) {
+    await useProgressBar(import.meta.env.SSR, router)
+  }
+}
 ```
 <br>
 
