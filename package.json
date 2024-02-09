@@ -1,7 +1,7 @@
 {
   "name": "vitepress-theme-me",
   "type": "module",
-  "version": "0.1.1",
+  "version": "0.1.2",
   "packageManager": "pnpm@8.6.10",
   "description": "vitepress theme for quickly to build your personal website.",
   "author": "toryz <zhoutao_233@163.com>",
