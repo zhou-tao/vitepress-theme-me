@@ -25,7 +25,7 @@ pnpm add vitepress-theme-me flexsearch vitepress-plugin-search unocss -D
 
 ### Usage
 
-1. extends the base configs of `vitepress-theme-me`.
+1. Extends base configs of `vitepress-theme-me`.
 
 ```js
 // .vitepress/config.js
@@ -67,9 +67,10 @@ export default defineConfigWithTheme({
 })
 ```
 
-For the files that need to be added, see the [example](https://github.com/zhou-tao/vitepress-theme-me/tree/main/example).
+&nbsp;&nbsp;&nbsp;For the files that need to be added, see the [example](https://github.com/zhou-tao/vitepress-theme-me/tree/main/example).
+<br>
 
-2. replaces the vitepress default theme.
+2. Replaces the vitepress default theme.
 
 ```js
 // .vitepress/theme/index.js
@@ -79,10 +80,11 @@ import 'vitepress-theme-me/style.css'
 
 export default Theme
 ```
+<br>
 
-3.  add full-context search plugin config. 
+3. Config the full-context search plugin. 
 
-notice: you need to add `vite.config.js` to your root directory.
+&nbsp;&nbsp;&nbsp;Notice: you need to add `vite.config.js` to your root directory.
 
 ```js
 // vite.config.js
@@ -110,7 +112,7 @@ export default defineConfig({
 
 Next, it's time to launch the app and build your site!
 
-you can also check out the [example app](https://github.com/zhou-tao/vitepress-theme-me/tree/main/example).
+And you can also check out the [example app](https://github.com/zhou-tao/vitepress-theme-me/tree/main/example).
 
 ### License
 
