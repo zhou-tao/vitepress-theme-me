@@ -31,6 +31,14 @@ export default defineConfigWithTheme({
           name: 'github'
         }
       }
-    ]
+    ],
+    waline: {
+      // !Notice: need replace to your site and see more details (https://waline.js.org/guide/get-started/)
+      serverURL: 'https://replace.your.site/example',
+      requiredMeta: ['nick', 'mail'],
+      wordLimit: 200,
+      pageSize: 5,
+      dark: 'html.dark'
+    }
   }
 })

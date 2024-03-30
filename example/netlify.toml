@@ -1,0 +1,14 @@
+[functions]
+  directory = "netlify/functions"
+
+[build.environment]
+  NODE_VERSION = "16"
+
+[build]
+  command = "pnpm run build"
+  publish = ".vitepress/dist"
+
+[[redirects]]
+  from = "/*"
+  to = "/index.html"
+  status = 200
