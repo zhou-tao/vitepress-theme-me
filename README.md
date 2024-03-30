@@ -63,6 +63,14 @@ export default defineConfigWithTheme({
         }
       }
     ]
+  },
+  waline: {
+    // !Notice: need replace to your site and see more details (https://waline.js.org/guide/get-started/)
+    serverURL: 'https://replace.your.site/example',
+    requiredMeta: ['nick', 'mail'],
+    wordLimit: 200,
+    pageSize: 5,
+    dark: 'html.dark'
   }
 })
 ```
@@ -89,7 +97,8 @@ export default {
 
 3. Config the full-context search plugin. 
 
-&nbsp;&nbsp;&nbsp;Notice: you need to add `vite.config.js` to your root directory.
+> [!NOTE]  
+> you need to add `vite.config.js` to your root directory.
 
 ```js
 // vite.config.js

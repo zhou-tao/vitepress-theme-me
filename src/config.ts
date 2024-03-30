@@ -1,6 +1,7 @@
 import { defineConfigWithTheme } from 'vitepress'
 
 import Unocss from 'unocss/vite'
+import type { WalineProps } from '@waline/client'
 
 export interface Nav {
   text: string
@@ -11,6 +12,7 @@ export interface Nav {
 export interface ThemeConfig {
   logo?: string
   nav?: Nav[]
+  waline?: Omit<WalineProps, 'path'>
 }
 
 export default defineConfigWithTheme<ThemeConfig>({
